@@ -2,15 +2,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PostFormComponent } from './post-form/post-form.component';
 import { PostComponent } from './post/post.component';
-import { Post2Component } from './post2/post2.component';
-import { Post3Component } from './post3/post3.component';
-import { NgForComponent } from './ng-for/ng-for.component';
 
 @NgModule({
-  declarations: [AppComponent, PostComponent, Post2Component, Post3Component, NgForComponent],
-  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent, PostFormComponent, PostComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

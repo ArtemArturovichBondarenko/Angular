@@ -1,0 +1,12 @@
+.br {
+  border: 3px solid rgb(126, 126, 126);
+}
+
+.red {
+  background: rgb(252, 93, 93);
+  font-weight: bold;
+}
+.blue {
+  background: rgb(83, 83, 248);
+  font-size: 1.5rem;
+}

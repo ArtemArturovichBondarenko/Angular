@@ -1,0 +1,25 @@
+<!-- <ul>
+  <li *ngFor="let number of arr; let idx = index">
+    {{ idx + 1 }} {{ number }}
+  </li>
+</ul> -->
+
+<ul style="list-style: none; padding: 0; margin: 0">
+  <li *ngFor="let person of obj">
+    <p>Name person</p>
+    <p>{{ person.title | uppercase }}</p>
+    <p>{{ person.author | lowercase }}</p>
+    <ul>
+      <li *ngFor="let comment of person.comments">
+        <p>{{ comment.name }}</p>
+        <p>{{ comment.text }}</p>
+        <ul>
+          <li *ngFor="let num of comment.number">
+            <p>{{ num.a }}</p>
+            <p>{{ num.b }}</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>

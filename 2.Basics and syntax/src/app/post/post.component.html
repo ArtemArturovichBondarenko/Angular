@@ -1,0 +1,71 @@
+<!-- <app-post2></app-post2> -->
+
+<!-- <input type="text" (keyup.enter)="onInputs($event)" />
+<button (click)="onClick()">Click me</button>
+<p>{{ name }}</p> -->
+
+<!-- =========================================================================================== -->
+<!-- 2 way binding
+<input type="text" [value]="title" (input)="onInput($event)" />
+<p>{{ title }}</p>
+<!-- or -->
+<!-- <input type="text" [(ngModel)]="title" /> -->
+<!-- <br /> -->
+
+<!-- ====================================================================================================== -->
+<!-- Директива ngStyle -->
+<!-- <button (click)="backgroundToggle = !backgroundToggle">Toggle</button>
+<div
+  [ngStyle]="{
+    width: '200px',
+    height: '200px',
+    borderRadius: '5px',
+    backgroundColor: backgroundToggle ? 'red' : 'blue'
+  }"
+></div> -->
+
+<!-- ================================================================================================================ -->
+<!-- Директива ngClass -->
+<!-- <button (click)="backgroundToggle = !backgroundToggle">Toggle</button> -->
+
+<!-- <p
+  [ngClass]="{
+    red: backgroundToggle,
+    blue: !backgroundToggle
+  }"
+>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iure.
+</p> -->
+<!-- <p [class.blue]="!backgroundToggle" [class.red]="backgroundToggle">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iure.
+</p> -->
+
+<!-- =========================================================================================================== -->
+<!-- Отображение по условию  -->
+<!-- <button (click)="toggle = !toggle">Toggle</button>
+<p *ngIf="toggle; else blueP" class="red">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laudantium?
+</p>
+<ng-template #blueP>
+  <p class="blue">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, laudantium?
+  </p>
+</ng-template> -->
+
+<!-- ============================================================================================= -->
+
+<!-- Директива ngSwitch -->
+<!-- <button (click)="toggle = !toggle">Toggle</button>
+<div [ngSwitch]="toggle">
+  <p *ngSwitchCase="true" class="red">Lorem, ipsum.</p>
+  <p *ngSwitchCase="false" class="blue">Lorem, ipsum dolor.</p>
+  <p *ngSwitchDefault>Lorem, ipsum dolor.</p>
+</div> -->
+
+<!-- ============================================================================================== -->
+
+<!-- ngFor -->
+<!-- <app-ng-for></app-ng-for> -->
+
+<!-- Pipes -->
+<p>{{ date | date: "short" | lowercase }}</p>

@@ -1,0 +1,17 @@
+<button (click)="onInkrement()">+1</button>
+<p>{{ value }}</p>
+<button (click)="onDekrement()">-1</button>
+<br />
+<input
+  type="text"
+  class="br"
+  [style.border-color]="param ? 'red' : 'green'"
+  (input)="onInput($event)"
+/>
+<!-- [class.red]="param"
+  [class.green]="!param" -->
+<p>{{ text }}</p>
+<br />
+<input type="text" [(ngModel)]="names" />
+<p>{{ names }}</p>
+<app-post3 [names]="userName" [ages]="userAge"></app-post3>
